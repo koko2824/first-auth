@@ -10,7 +10,7 @@ func Init()  {
 	ctrl := controller.Controller{}
 
 	r.GET("/", ctrl.Home)
-	r.POST("/login")
+	r.POST("/insert", ctrl.Insert)
 
 	r.Run("localhost:8080")
 }

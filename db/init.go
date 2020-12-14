@@ -16,7 +16,7 @@ func Init()  {
 		log.Fatalln(err)
 	}
 
-	tmp, err := sql.Open("postgres", os.Getenv("JDBC"))
+	tmp, err := sql.Open("postgres", os.Getenv("DB"))
 	if err != nil {
 		log.Fatalln(err)
 	}
